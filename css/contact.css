@@ -1,0 +1,67 @@
+legend {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.4em;
+    text-align: center;
+    padding-bottom: .7em;
+}
+#fillIn {
+    text-align: center;
+}
+#fillIn label {
+    width: 90px;
+    display: inline-block;
+    padding-bottom: .6em;
+}
+#message textarea {
+    text-align: start;
+}
+input {
+    height: 2.4em;
+    width: 28em;
+    border: solid 1px #b2b2b2;
+}
+button {
+    margin-top: 2em;
+    text-align: center;
+}
+#content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    margin: 3em 0;
+}
+fieldset {
+    margin-top: 2em;
+}
+#fillIn fieldset li {
+    display: flex;
+}
+img {
+    margin: 0 auto;
+}
+#message {
+    height: 17em;
+    text-align: start;
+    width: 28em;
+    border: solid 1px #b2b2b2;
+}
+@media screen and (min-width: 784px) {
+    #booksPhoto {
+    padding-left: 4.5em;
+    }
+}
+@media screen and (min-width: 1009px) {
+    #content {
+        display: flex;
+        justify-content: center;
+        padding: 2em 0;
+        align-items: center;
+        margin: 1em 0 3em 0;
+    }
+    legend {
+        text-align: left;
+    }
+    #booksPhoto {
+    padding-left: 4.5em;
+    }
+}
