@@ -4,26 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/main.css">
     <title>Honey Stamped Designs</title>
 </head>
 <body>
 <!--NAVIGATION-->
 <nav>
-    <h1><a href="../index.html">Honey Stamped Designs</a></h1>
-    <ul>
-    <li><a href="#" class="navSpace">ABOUT</a></li>
-    <li><a href="portfolio.html" class="navSpace">PORTFOLIO</a></li>
-    <li><a href="contact.html" class="navSpace">CONTACT US</a></li>
+    <div class="logo">
+        <h1><a href="../index.html">Honey Stamped Designs</a></h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#" class="navSpace">ABOUT</a></li>
+        <li><a href="portfolio.html" class="navSpace">PORTFOLIO</a></li>
+        <li><a href="contact.html" class="navSpace">CONTACT US</a></li>
     </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
 </nav>
 <main>
-
+<!-- ABOUT ME -->
+<section id="aboutMe">
+    <div class="headerImgT"><img src="../images/me-01.jpg" alt="my picture"></div>
+    <div id="aboutMeText" class="headerTextT">
+        <h2>Let me introduce myself!</h2><br><br>
+        <h2  style="display: inline;">Hello, my name is </h2><h1  style="display: inline;">Sharon.</h1><br>
+        <p>I am a San Diego native that made my way up to Davis for college. Upon graduating with a communication major and psychology minor, I didn't have a clue about what I would be doing next. I eventually found myself teaching English in Korea. I enjoyed being around children, and it was hands down the best three years of my life! I got to experience my culture as well as visit different parts of Asia that I hadn't been to before! It was awesome.</p>
+        <p>But, I knew that I needed another plan. I knew that I couldn't stay in Korea forever and gave myself a limit of a few years. It was a somber parting, but I eventually made my way back to California. When I came back, I started working for nonprofits and marketing agencies doing social media marketing. I hated it. I have nothing against it, but I knew that it just wasn't for me.</p>
+        <p>In my free time, I found myself dabbling into the world of design and playing around with Illustrator and Photoshop. Interested in taking classes, I took the IMCP and FEWD program at SDCE. The FEWD program has taught me a lot and challenged me in many different ways. I am very happy that I had the chance to exercise my creative side along with learning how to code and build websites from the ground up. I would love to use the skills I have learned to create a custom and personal representation of your brand and product on the interwebs!</p>
+        
+    </div>
+</section>
 </main>
 <footer>
     <a href="#"><img src="../images/facebook.png" alt="facebook logo"></a>
     <a href="#"><img src="../images/instagram.png" alt="instagram logo"></a>
     <p>&copy; HONEY STAMPED DESIGNS 2020</p>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+<script src="../scripts/pageSlide.js"></script>
+<script src="../scripts/show-on-scroll.js"></script>
+<script src="../scripts/main.js"></script>
 </body>
 </html>

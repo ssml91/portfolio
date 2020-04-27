@@ -4,54 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+  crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Honey Stamped Designs</title>
 </head>
 <body>
 <!--NAVIGATION-->
 <nav>
-    <h1><a href="#">Honey Stamped Designs</a></h1>
-    <ul>
-    <li><a href="pages/about.html" class="navSpace">ABOUT</a></li>
-    <li><a href="pages/portfolio.html" class="navSpace">PORTFOLIO</a></li>
-    <li><a href="pages/contact.html" class="navSpace">CONTACT US</a></li>
+    <div class="logo">
+        <h1><a href="#">Honey Stamped Designs</a></h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="pages/about.html" class="navSpace">ABOUT</a></li>
+        <li><a href="pages/portfolio.html" class="navSpace">PORTFOLIO</a></li>
+        <li><a href="pages/contact.html" class="navSpace">CONTACT US</a></li>
     </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
 </nav>
 <main>
 <!--HEADER IMAGE-->
 <article id="headerImg">
-<a href="pages/contact.html"><img src="images/desk-01.jpg" alt="stationery on desk"></a>
+    <div class="headerImgT"><img src="images/header-02.jpg" alt="web design"></div>
+    <div class="headerTextT">
+        <h1>Let's launch your dream website!</h1>
+        <h2>WEBSITE DESIGN &amp; BRANDING</h2>
+        <p>FOR THE MODERN CREATIVE AND SMALL BUSINESS OWNERS: A SIMPLE WAY TO REPRESENT YOUR BRAND AND TAKE IT TO THE NEXT LEVEL</p><br>
+        <button onclick="document.location = 'pages/contact.html'" class="btn">BOOK A CONSULTATION NOW</button>
+    </div>
 </article>
 <!--CATCHY HEADER-->
-<article class="catchyHeader">
-    <h3>Need a website that truly represents your brand?</h3>
-    <h3>Feeling frustrated and unsure of where to start?</h3>
+<article class="rightPlace show-on-scroll">
+    <p>Need a website that truly represents your brand?</p>
+    <p>Feeling frustrated and unsure of where to start?</p>
     <h2>YOU'VE COME TO THE RIGHT PLACE.</h2>
+    <button onclick="document.location = 'pages/portfolio.html'" type="button" class="btn">VIEW MY PORTFOLIO</button>
+</article>
+<!-- SERVICES -->
+<article class="services">
+    <div class="show-on-scroll">
+        <img src="images/services-01.jpg" alt="graphic design services">
+        <h1>Graphic Design</h1>
+        <p>Whether you need a graphic or photo edited for your website or blog, I've got you covered.</p>
+        <button onclick="document.location = 'pages/contact.html'" type="button" class="btn">LEARN MORE</button>
+    </div>
+    <div class="show-on-scroll">
+        <img src="images/services-02.jpg" alt="instagram content">
+        <h1>Content Creation</h1>
+        <p>Need help creating an Instagram worthy post? Or a promo image for your site? I can help.</p>
+        <button onclick="document.location = 'pages/contact.html'" type="button" class="btn">GET STARTED</button>
+    </div>
+    <div class="show-on-scroll">
+        <img src="images/services-03.jpg" alt="websight design">
+        <h1>Website Design</h1>
+        <p>Does your website need a refresh or a complete makeover? I can help with that too!</p>
+        <button onclick="document.location = 'pages/contact.html'" type="button" class="btn">TELL ME MORE</button>
+    </div>
 </article>
 <!--GRID LAYOUT OF DESCRIPTION OF SERVICES-->
-<article class="imgText">
-    <img src="images/plant-02.jpg" alt="succulent plant">
-    <section class="text">
-        <h2>Represent your brand with</h2> <h1>authenticity</h1>
+<div class="imgText">
+    <div><img src="images/plant-02.jpg" alt="succulent plant" class="fromLeft slideIn"></div>
+    <div class="text fromRight slideIn">
+       <h2>01</h2><br><h2>Represent your brand with</h2> <h1>authenticity</h1>
         <p>Show your audience what you really got! At Honey Stamped Designs, we work with brands to combine their goals, visions, and passions to create a personalized site that truly represents their vibe and content.</p>
-    </section>
-</article>
-<article class="imgText">
-    <section class="text">
-        <h2>Simple and clean</h2> <h1>design</h1>
-        <p>Did you know that it takes 0.05 seconds for a user to form an opinion about your website? And 88% of online consumers are less likely to return to a site if they've had a bad experience? Catch the eye of your viewers by providing simple design that pleases the eye and draws people in to what you have to say.</p>
-    </section>
-    <img src="images/plant-03.jpg" alt="desk for work">
-</article>
-<article class="imgText">
-    <img src="images/plant-04.jpg" alt="computer and notebooks">
-    <section class="text">
-        <h2>Increase your</h2> <h1>business</h1>
+    </div>
+    <div class="img1"><img src="images/plant-03.jpg" alt="desk for work" class="fromRight slideIn"></div>
+    <div class="text fromLeft slideIn">
+        <h2>02</h2><br><h2>Simple and clean</h2> <h1>design</h1>
+        <p>Did you know that it takes 0.05 seconds for a user to form an opinion about your website? And 88% of online consumers are less likely to return to a site if they've had a bad experience? Catch the eye of your viewers by providing simple design that pleases the eye and draws people in with their killer.</p>
+    </div>
+    <div><img src="images/plant-04.jpg" alt="computer and notebooks" class="fromLeft slideIn"></div>
+    <div class="text inline fromRight slideIn">
+        <h2>03</h2><br><h2 style="margin-bottom: 1.3em;">Increase your</h2><h1 style="display: inline;">brand </h1> <h2 style="display: inline;">&amp;</h2> <h1 style="display: inline;">business</h1>
         <p>With a newly created site, you will surely be able to attract old and new customers to see what you have to offer! Use your website as a tool to draw in customers in to better offer your products and services!</p>
-    </section>
-</article>
+    </div>
+</div>
 <!--SIGN UP FOR EMAIL NEWSLETTER-->
-<article class="newsletter">
+<article class="newsletter show-on-scroll">
     <h2>Sign up for our newsletter!</h2>
     <p>Sign up to receive tips and tricks for branding, copywriting, and how to represent your company in the best way!</p><br>
         <fieldset>
@@ -60,17 +95,17 @@
         <li>
         <label for="email"></label>
         <input type="email" id="email" name="email" placeholder=" NAME@DOMAIN.COM" required></li>
-        <button type="button">SUBMIT</button>
+        <button type="button" class="btn">SUBMIT</button>
         </ul>
         </fieldset>
     </article>
 <!--INSTAGRAM FEED-->
 <section class="catchyHeader"><h2 style="display: inline;">Follow us on </h2><h1 style="display: inline;">instagram!</h1></section>
-<article class="igPhotos" style="clear: both;">
-    <a href="#" target="_blank"><img src="images/igFeed-05.jpg" alt="girl holding flowers"></a>
-    <a href="#" target="_blank"><img src="images/igFeed-06.jpg" alt="macrame on the wall"></a>
-    <a href="#" target="_blank"><img src="images/igFeed-07.jpg" alt="girl on phone"></a>
-    <a href="#" target="_blank"><img src="images/igFeed-08.jpg" alt="latte in hand"></a>
+<article class="igPhotos show-on-scroll" style="clear: both;">
+    <a href="#" target="_blank"><img src="images/igFeed-06.jpg" alt="girl holding flowers"></a>
+    <a href="#" target="_blank"><img src="images/igFeed-07.jpg" alt="macrame on the wall"></a>
+    <a href="#" target="_blank"><img src="images/igFeed-08.jpg" alt="girl on phone"></a>
+    <a href="#" target="_blank"><img src="images/igFeed-09.jpg" alt="latte in hand"></a>
 </article>
 </main>
 <footer>
@@ -78,5 +113,10 @@
     <a href="#"><img src="images/instagram.png" alt="instagram logo"></a>
     <p>&copy; HONEY STAMPED DESIGNS 2020</p>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+<script src="scripts/pageSlide.js"></script>
+<script src="scripts/show-on-scroll.js"></script>
+<script src="scripts/hover.js"></script>
+<script src="scripts/main.js"></script>
 </body>
 </html>
